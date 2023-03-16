@@ -89,11 +89,11 @@ Analysis: Naming style errors are true positives but naming style convention dep
 
 Errornous code:
 
-	```
+	
 	INIT = 0
 	READY = 1
 	PLAYING = 2
-	```
+	
   
 Errors Flagged:
   
