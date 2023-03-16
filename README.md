@@ -1,10 +1,10 @@
 # lab-5_202001207
 
-Git Repository for Lab 5
+## Static Analysis
 
 Tool Used MyPy
 
-Errornous Code:
+__Code 1:__
 
 ```
 import imp
@@ -20,7 +20,6 @@ CACHE_FILE_NAME = "cache-"
 
 CACHE_FILE_EXT = ".jpg"
 ```
-
 Error Flagged:
 
 ```
@@ -34,7 +33,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 Analysis: The above import errors are false positive these get flagged because mypy was not able to find the module you are trying to import, whether it comes bundled with type hints or not there are not actual errors as these libraries were in fact imported and used in the program.
 
-Errornous Code:
+__Code 2:__
 
 ```
 self.serverAddr = serveraddr
@@ -87,7 +86,7 @@ client.py:315:2: C0103: Attribute name "rtpSocket" doesn't conform to snake_case
 
 Analysis: Naming style errors are true positives but naming style convention depends from programmer from programmer there are many naming styles like pascal case, snake case, kebab case, camel case. If the codebas has been using a specific naming style since the beginning then it does not make sense to change it later to snake case naming style that mypy specifically expects in the code.
 
-Errornous code:
+__Code 3:__
 
 	
 	INIT = 0
